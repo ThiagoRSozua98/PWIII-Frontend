@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ListaUsuarioComponent } from './lista-usuario/lista-usuario.component';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
